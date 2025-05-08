@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ServeNow - Reviews</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(to right, #3b82f6, #10b981); /* Blue to Green Gradient */
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+
+    <!-- Navbar -->
+    <nav class="bg-white shadow-lg">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex justify-between">
+                <div class="flex space-x-7">
+                    <div>
+                        <a href="index.html" class="flex items-center py-4 px-2">
+                            <span class="font-semibold text-gray-900 text-2xl">Serve<span class="text-emerald-500">Now</span></span>
+                        </a>
+                    </div>
+                    <div class="hidden md:flex items-center space-x-1">
+                        <a href="index.html" class="py-4 px-2 text-gray-500 font-semibold hover:text-emerald-500 transition duration-300">Home</a>
+                        <a href="initiative-detail.html" class="py-4 px-2 text-gray-500 font-semibold hover:text-emerald-500 transition duration-300">Initiatives</a>
+                        <a href="volunteer.html" class="py-4 px-2 text-gray-500 font-semibold hover:text-emerald-500 transition duration-300">Volunteer</a>
+                        <a href="reviews.html" class="py-4 px-2 text-emerald-500 border-b-4 border-emerald-500 font-semibold">Reviews</a>
+                    </div>
+                </div>
+                <div class="hidden md:flex items-center space-x-3">
+                    <a href="login.html" class="py-2 px-4 font-medium text-gray-900 rounded hover:bg-emerald-100 transition duration-300">Login</a>
+                    <a href="signup.html" class="py-2 px-4 bg-emerald-500 text-white font-medium rounded-md hover:bg-emerald-600 transition duration-300">Sign Up</a>
+                    <!-- Profile Icon -->
+                    <a href="dashboard.html" class="flex items-center justify-center w-10 h-10 bg-gray-200 rounded-full hover:bg-gray-300 transition">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5.121 17.804A4 4 0 0112 15a4 4 0 016.879 2.804M15 11a4 4 0 10-8 0 4 4 0 008 0z" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Reviews Section -->
+    <section class="py-16">
+        <div class="max-w-6xl mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center text-gray-800 mb-12">What Our Volunteers Say</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Review 1 -->
+                <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-xl transition duration-300">
+                    <p class="text-gray-700 mb-4">“I never thought spending a few hours on a weekend could mean so much. ServeNow helped me find meaningful ways to give back to society.”</p>
+                    <div class="flex items-center space-x-4">
+                        <img src="https://i.pinimg.com/736x/ec/2e/1d/ec2e1db3af4015cfe687378c4b9de7a1.jpg" alt="User 1" class="w-12 h-12 rounded-full">
+                        <div>
+                            <h4 class="text-lg font-semibold">Anjali Mehra</h4>
+                            <p class="text-sm text-gray-500">Volunteer - Food Drive</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Review 2 -->
+                <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-xl transition duration-300">
+                    <p class="text-gray-700 mb-4">“ServeNow brought our community together for a clean-up drive. It wasn't just about cleaning—it was about caring.”</p>
+                    <div class="flex items-center space-x-4">
+                        <img src="https://i.pinimg.com/736x/76/53/16/765316b12b380d310f0aa4c35b80eb4c.jpg" alt="User 2" class="w-12 h-12 rounded-full">
+                        <div>
+                            <h4 class="text-lg font-semibold">Ravi Kumar</h4>
+                            <p class="text-sm text-gray-500">Volunteer - Education Project</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Review 3 -->
+                <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-xl transition duration-300">
+                    <p class="text-gray-700 mb-4">“Volunteering at the animal shelter taught me compassion in a new form. ServeNow helped me find my purpose.”</p>
+                    <div class="flex items-center space-x-4">
+                        <img src="https://i.pinimg.com/736x/b6/15/20/b61520c7499028bae2a338a1396227f7.jpg" alt="User 3" class="w-12 h-12 rounded-full">
+                        <div>
+                            <h4 class="text-lg font-semibold">Sana Ali</h4>
+                            <p class="text-sm text-gray-500">Volunteer - Outreach Program</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>

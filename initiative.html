@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Initiatives - ServeNow</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@preline/preline@2.0.0/dist/preline.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+        .hero-gradient {
+            background: linear-gradient(135deg, #4f46e5 0%, #10b981 100%);
+        }
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Navbar -->
+    <nav class="bg-white shadow-lg">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex justify-between">
+                <div class="flex space-x-7">
+                    <div>
+                        <a href="/" class="flex items-center py-4 px-2">
+                            <span class="font-semibold text-gray-900 text-2xl">Serve<span class="text-emerald-500">Now</span></span>
+                        </a>
+                    </div>
+                    <div class="hidden md:flex items-center space-x-1">
+                        <a href="/" class="py-4 px-2 text-gray-500 font-semibold hover:text-emerald-500 transition duration-300">Home</a>
+                        <a href="initiative.html" class="py-4 px-2 text-emerald-500 border-b-4 border-emerald-500 font-semibold">Initiatives</a>
+                        <a href="volunteer.html" class="py-4 px-2 text-gray-500 font-semibold hover:text-emerald-500 transition duration-300">Volunteer</a>
+                        <a href="review.html" class="py-4 px-2 text-gray-500 font-semibold hover:text-emerald-500 transition duration-300">Review</a>
+                    </div>
+                </div>
+                <div class="hidden md:flex items-center space-x-3">
+                    <a href="login.html" class="py-2 px-4 font-medium text-gray-900 rounded hover:bg-emerald-100 transition duration-300">Login</a>
+                    <a href="signup.html" class="py-2 px-4 bg-emerald-500 text-white font-medium rounded-md hover:bg-emerald-600 transition duration-300">Sign Up</a>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button class="outline-none mobile-menu-button">
+                        <svg class="w-6 h-6 text-gray-500" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor">
+                            <path d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="hidden mobile-menu">
+            <ul>
+                <li><a href="/" class="block text-sm px-2 py-4 hover:bg-emerald-100 transition duration-300">Home</a></li>
+                <li><a href="initiative.html" class="block text-sm px-2 py-4 text-white bg-emerald-500 font-semibold">Initiatives</a></li>
+                <li><a href="volunteer.html" class="block text-sm px-2 py-4 hover:bg-emerald-100 transition duration-300">Volunteer</a></li>
+                <li><a href="review.html" class="block text-sm px-2 py-4 hover:bg-emerald-100 transition duration-300">Review</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Initiatives Section -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">Explore Our Initiatives</h2>
+            <div class="flex flex-wrap -mx-4">
+                <div class="w-full md:w-1/3 px-4 mb-8" data-aos="fade-up" data-aos-delay="100">
+                    <div class="bg-white rounded-lg overflow-hidden shadow-md card-hover transition duration-300">
+                        <img src="https://images.unsplash.com/photo-1606787366850-de6330128bfc?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Food Drive" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold mb-2">Community Food Drive</h3>
+                            <p class="text-gray-600 mb-4">Help collect and distribute food to families in need across our city.</p>
+                            <div class="flex justify-between items-center">
+                                <a href="https://robinhoodarmy.com/" class="text-emerald-500 hover:text-emerald-600 font-medium">Learn More →</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-full md:w-1/3 px-4 mb-8" data-aos="fade-up" data-aos-delay="200">
+                    <div class="bg-white rounded-lg overflow-hidden shadow-md card-hover transition duration-300">
+                        <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Education Workshop" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold mb-2">After-School Tutoring</h3>
+                            <p class="text-gray-600 mb-4">Volunteer to tutor students in math, science, and reading skills.</p>
+                            <div class="flex justify-between items-center">
+                                <a href="https://www.sevabharathi.org/education/" class="text-emerald-500 hover:text-emerald-600 font-medium">Learn More →</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-full md:w-1/3 px-4 mb-8" data-aos="fade-up" data-aos-delay="300">
+                    <div class="bg-white rounded-lg overflow-hidden shadow-md card-hover transition duration-300">
+                        <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Health Campaign" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold mb-2">Community Health Fair</h3>
+                            <p class="text-gray-600 mb-4">Free health screenings and wellness education for underserved communities.</p>
+                            <div class="flex justify-between items-center">
+                                <a href="https://www.ketto.org/" class="text-emerald-500 hover:text-emerald-600 font-medium">Learn More →</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-white border-t mt-12 py-8 text-center text-gray-600">
+        <p>© 2025 ServeNow. Making Social Good Accessible for All.</p>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.addEventListener("DOMContentLoaded", () => {
+            const btn = document.querySelector(".mobile-menu-button");
+            const menu = document.querySelector(".mobile-menu");
+            btn.addEventListener("click", () => {
+                menu.classList.toggle("hidden");
+            });
+        });
+
+        // Initialize AOS animations
+        document.addEventListener("DOMContentLoaded", () => {
+            AOS.init();
+        });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+</body>
+</html>

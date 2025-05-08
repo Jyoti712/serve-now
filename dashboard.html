@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - ServeNow</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Background gradient */
+        body {
+            background: linear-gradient(135deg, #10b981 0%, #3b82f6 100%);
+            font-family: 'Poppins', sans-serif;
+        }
+
+        /* Card styling */
+        .profile-card {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .profile-card h2 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: #4b5563;
+        }
+
+        .profile-card p {
+            font-size: 1rem;
+            color: #6b7280;
+        }
+
+        /* Flex container for the profile card */
+        .card-content {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        /* Label and actual value styling */
+        .label {
+            font-weight: 600;
+            color: #000;
+        }
+
+        .value {
+            color: #6b7280;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <div class="max-w-4xl mx-auto p-8">
+        <h1 class="text-4xl font-bold text-center text-white mb-8">Your Profile</h1>
+        
+        <div class="profile-card">
+            <div class="card-content">
+                <h2>Volunteer Information</h2>
+                <p><span class="label">Name:</span> <span class="value" id="profileName">xyz</span></p>
+                <p><span class="label">Email:</span> <span class="value" id="profileEmail"></span></p>
+                <p><span class="label">Area of Interest:</span> <span class="value" id="profileInterest"></span></p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Check if user is logged in and display stored info, or use default "xyz" if not
+        document.getElementById('profileName').textContent = localStorage.getItem('volunteerName') || 'xyz';
+        document.getElementById('profileEmail').textContent = localStorage.getItem('volunteerEmail') || 'Not available';
+        document.getElementById('profileInterest').textContent = localStorage.getItem('volunteerInterest') || 'Not available';
+
+        // Example: Once a user completes the volunteer form, store the data in localStorage
+        // localStorage.setItem('volunteerName', 'John Doe');
+        // localStorage.setItem('volunteerEmail', 'john.doe@example.com');
+        // localStorage.setItem('volunteerInterest', 'Helping with Education');
+    </script>
+</body>
+</html>

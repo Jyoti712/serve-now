@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ServeNow - Social Good Platform</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@preline/preline@2.0.0/dist/preline.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+        .hero-gradient {
+            background: linear-gradient(135deg, #4f46e5 0%, #10b981 100%);
+        }
+        
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Navbar -->
+    <nav class="bg-white shadow-lg">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex justify-between">
+                <div class="flex space-x-7">
+                    <div>
+                        <a href="/" class="flex items-center py-4 px-2">
+                            <span class="font-semibold text-gray-900 text-2xl">Serve<span class="text-emerald-500">Now</span></span>
+                        </a>
+                    </div>
+                    <div class="hidden md:flex items-center space-x-1">
+                        <a href="/" class="py-4 px-2 text-emerald-500 border-b-4 border-emerald-500 font-semibold">Home</a>
+                        <a href="initiative.html" class="py-4 px-2 text-gray-500 font-semibold hover:text-emerald-500 transition duration-300">Initiatives</a>
+                        <a href="volunteer.html" class="py-4 px-2 text-gray-500 font-semibold hover:text-emerald-500 transition duration-300">Volunteer</a>
+                        <a href="review.html" class="py-4 px-2 text-gray-500 font-semibold hover:text-emerald-500 transition duration-300">Reviews</a>
+                    </div>
+                </div>
+                <div class="hidden md:flex items-center space-x-3">
+                    <a href="login.html" class="py-2 px-4 font-medium text-gray-900 rounded hover:bg-emerald-100 transition duration-300">Login</a>
+                    <a href="signup.html" class="py-2 px-4 bg-emerald-500 text-white font-medium rounded-md hover:bg-emerald-600 transition duration-300">Sign Up</a>
+                    <!-- Profile Icon -->
+                    <a href="dashboard.html" class="flex items-center justify-center w-10 h-10 bg-gray-200 rounded-full hover:bg-gray-300 transition">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5.121 17.804A4 4 0 0112 15a4 4 0 016.879 2.804M15 11a4 4 0 10-8 0 4 4 0 008 0z" />
+                        </svg>
+                    </a>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button class="outline-none mobile-menu-button">
+                        <svg class="w-6 h-6 text-gray-500" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor">
+                            <path d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="hidden mobile-menu">
+            <ul>
+                <li><a href="/" class="block text-sm px-2 py-4 text-white bg-emerald-500 font-semibold">Home</a></li>
+                <li><a href="initiative.html" class="block text-sm px-2 py-4 hover:bg-emerald-100 transition duration-300">Initiatives</a></li>
+                <li><a href="volunteer.html" class="block text-sm px-2 py-4 hover:bg-emerald-100 transition duration-300">Volunteer</a></li>
+                <li><a href="review.html" class="block text-sm px-2 py-4 hover:bg-emerald-100 transition duration-300">Review</a></li>
+                <li><a href="dashboard.html" class="block text-sm px-2 py-4 hover:bg-emerald-100 transition duration-300">Dashboard</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-gradient text-white py-20">
+        <div class="container mx-auto px-6 text-center">
+            <h1 class="text-4xl md:text-6xl font-bold mb-6">Join the Movement for Social Good</h1>
+            <p class="text-xl md:text-2xl mb-12 max-w-3xl mx-auto">Connect with local initiatives supporting Sustainable Development Goals like No Poverty, Zero Hunger, and Quality Education in your community.</p>
+            <a href="initiative.html" class="bg-white text-emerald-600 font-bold rounded-full py-4 px-8 shadow-lg uppercase tracking-wider hover:bg-gray-100 transition duration-300">Explore Initiatives</a>
+        </div>
+    </section>
+
+<!-- SDG Goals Section -->
+<section class="py-16 bg-white">
+    <div class="container mx-auto px-6">
+        <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">Our Focus SDG Goals</h2>
+        <div class="flex flex-wrap justify-center">
+            <div class="w-full md:w-1/3 px-4 mb-8">
+                <div class="bg-gray-50 rounded-lg p-6 h-full transform transition-transform duration-300 hover:scale-105 hover:rotate-1 shadow-lg">
+                    <div class="text-emerald-500 mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">No Poverty</h3>
+                    <p class="text-gray-600">Support initiatives that provide financial assistance, job training, and resources to lift individuals and families out of poverty.</p>
+                </div>
+            </div>
+            <div class="w-full md:w-1/3 px-4 mb-8">
+                <div class="bg-gray-50 rounded-lg p-6 h-full transform transition-transform duration-300 hover:scale-105 hover:rotate-1 shadow-lg">
+                    <div class="text-emerald-500 mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Zero Hunger</h3>
+                    <p class="text-gray-600">Join food drives, community kitchens, and urban farming projects to ensure everyone has access to nutritious meals.</p>
+                </div>
+            </div>
+            <div class="w-full md:w-1/3 px-4 mb-8">
+                <div class="bg-gray-50 rounded-lg p-6 h-full transform transition-transform duration-300 hover:scale-105 hover:rotate-1 shadow-lg">
+                    <div class="text-emerald-500 mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Quality Education</h3>
+                    <p class="text-gray-600">Volunteer for tutoring programs, donate educational materials, or support school infrastructure projects.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Featured Initiatives -->
+<section class="py-16 bg-gray-50">
+    <div class="container mx-auto px-6">
+        <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">Featured Initiatives</h2>
+        <div class="flex flex-wrap -mx-4">
+            <div class="w-full md:w-1/3 px-4 mb-8">
+                <div class="bg-white rounded-lg overflow-hidden shadow-md card-hover transition duration-300">
+                    <img src="https://images.unsplash.com/photo-1606787366850-de6330128bfc?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Food Drive" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Community Food Drive</h3>
+                        <p class="text-gray-600 mb-4">Help collect and distribute food to families in need across our city.</p>
+                        <div class="flex justify-between items-center">
+                            <a href="https://robinhoodarmy.com/" class="text-emerald-500 hover:text-emerald-600 font-medium">Learn More →</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="w-full md:w-1/3 px-4 mb-8">
+                <div class="bg-white rounded-lg overflow-hidden shadow-md card-hover transition duration-300">
+                    <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Education Workshop" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">After-School Tutoring</h3>
+                        <p class="text-gray-600 mb-4">Volunteer to tutor students in math, science, and reading skills.</p>
+                        <div class="flex justify-between items-center">
+                            <a href="https://www.sevabharathi.org/education/" class="text-emerald-500 hover:text-emerald-600 font-medium">Learn More →</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="w-full md:w-1/3 px-4 mb-8">
+                <div class="bg-white rounded-lg overflow-hidden shadow-md card-hover transition duration-300">
+                    <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Health Campaign" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Community Health Fair</h3>
+                        <p class="text-gray-600 mb-4">Free health screenings and wellness education for underserved communities.</p>
+                        <div class="flex justify-between items-center">
+                            <a href="https://www.ketto.org/" class="text-emerald-500 hover:text-emerald-600 font-medium">Learn More →</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="text-center mt-8">
+            <a href="initiative-detail.html" class="inline-block bg-emerald-500 text-white font-bold rounded-full py-3 px-8 shadow-lg uppercase tracking-wider hover:bg-emerald-600 transition duration-300">View All Initiatives</a>
+        </div>
+    </div>
+</section>
+
+<!-- Call to Action -->
+<section class="py-16 bg-white">
+    <div class="container mx-auto px-6 text-center">
+        <h2 class="text-3xl font-bold text-gray-800 mb-6">Ready to Make a Difference?</h2>
+        <p class="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">Join hundreds of volunteers who are creating positive change in their communities through ServeNow.</p>
+        <a href="volunteer.html" class="bg-emerald-500 text-white font-bold rounded-full py-4 px-8 shadow-lg uppercase tracking-wider hover:bg-emerald-600 transition duration-300">Become a Volunteer</a>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-white border-t mt-12 py-8 text-center text-gray-600">
+    <p>© 2025 ServeNow. Making Social Good Accessible for All.</p>
+</footer>
+
+<script>
+    // Mobile menu toggle
+    const btn = document.querySelector(".mobile-menu-button");
+    const menu = document.querySelector(".mobile-menu");
+
+    btn.addEventListener("click", () => {
+        menu.classList.toggle("hidden");
+    });
+
+    // Suggestion: Add scroll animations using AOS library
+    document.addEventListener("DOMContentLoaded", () => {
+        AOS.init(); // Initialize AOS if the library is included
+    });
+</script>
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+
+<!-- Code injected by live-server -->
+
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body>
+</html>
+
